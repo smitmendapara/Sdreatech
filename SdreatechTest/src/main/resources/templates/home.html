@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Home</title>
+	<link rel="stylesheet" th:href="@{/css/style.css}" />
+	<script th:src="@{/js/script.js}"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+	<form class="teamForm">
+		
+		------------------------- Team Information -----------------------
+		
+		<br /><br />
+		Team Title : <input type="text" name="teamTitle" class="__teamTitle" required/>&nbsp;&nbsp;&nbsp;
+		Sort Name : <input type="text" name="sortName" class="__sortName" maxlength="10" required/>&nbsp;&nbsp;&nbsp;
+		Manage By : <input type="text" name="manageBy" class="__manageBy" required/><br></br>
+			
+	</form>
+	
+	<button type="button" th:onclick="newForm()">Add</button><br />
+	
+	<div class="addForm">
+		
+	</div>
+	
+	<br />
+	<button type="button" th:onclick="insertData()">Save</button>
+	
+</body>
+</html>
